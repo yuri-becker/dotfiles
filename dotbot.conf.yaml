@@ -15,3 +15,4 @@
     ~/.vimrc: vimrc
     ~/.gitconfig: gitconfig
     ~/.vimpkg/vim_config.json: vimpkg/vim_config.json
+    ~/.config/kitty: kitty
