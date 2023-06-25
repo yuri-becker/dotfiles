@@ -6,7 +6,6 @@
 - shell:
   - [git submodule update --init --recursive, Updating Submodules]
   - [./install-zsh.sh, Checking for oh-my-zsh installation]
-  - [./install-apt-vim.sh, Checking for apt-vim installation]
 - link:
     ~/.zshrc: zshrc
     ~/.powerlevel10k: powerlevel10k
@@ -14,5 +13,4 @@
     ~/.p10k.zsh: p10k.zsh
     ~/.vimrc: vimrc
     ~/.gitconfig: gitconfig
-    ~/.vimpkg/vim_config.json: vimpkg/vim_config.json
     ~/.config/kitty: kitty

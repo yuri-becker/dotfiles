@@ -63,7 +63,11 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
+
 # stripe
 fpath=(~/.stripe $fpath)
 autoload -Uz compinit && compinit -i
+
+#fnm
+eval "$(fnm env --use-on-cd)"
+
