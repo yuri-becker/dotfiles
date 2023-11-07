@@ -71,3 +71,10 @@ autoload -Uz compinit && compinit -i
 #fnm
 eval "$(fnm env --use-on-cd)"
 
+# gitkraken-cli
+unalias gk
+
+# include local zshrc for things that should not be shared O_O
+if [ -f $HOME/.zshrc.local ]; then
+    source $HOME/.zshrc.local
+fi
