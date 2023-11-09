@@ -10,7 +10,7 @@ DISABLE_AUTO_UPDATE="false"
 export UPDATE_ZSH_DAYS=7
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
-plugins=(git command-not-found common-aliases dirhistory gradle )
+plugins=(git command-not-found common-aliases gradle )
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.powerlevel10k/powerlevel10k.zsh-theme
@@ -58,7 +58,7 @@ source <(ng completion script)
 export GPG_TTY=$(tty)
 
 # pnpm
-export PNPM_HOME="/Users/yuri/.local/share/pnpm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -78,3 +78,16 @@ unalias gk
 if [ -f $HOME/.zshrc.local ]; then
     source $HOME/.zshrc.local
 fi
+
+# rbenv
+eval "$(rbenv init - zsh)"
+
+# vitasdk
+export VITASDK="$HOME/bin/vitasdk"
+export PATH="$VITASDK/bin:$PATH"
+
+# pyenv
+PATH=$(pyenv root)/shims:$PATH
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
