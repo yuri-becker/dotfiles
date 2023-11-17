@@ -14,3 +14,4 @@
     ~/.vimrc: vimrc
     ~/.gitconfig: gitconfig
     ~/.config/kitty: kitty
+    ~/.gitkraken/themes: gitkraken/themes
