@@ -9,7 +9,7 @@
 - link:
     ~/.zshrc: zshrc
     ~/.powerlevel10k: powerlevel10k
-    ~/.zsh-autocomplete: zsh-autocomplete
+    ~/.oh-my-zsh/custom/plugins/zsh-autocomplete: zsh-autocomplete
     ~/.p10k.zsh: p10k.zsh
     ~/.vimrc: vimrc
     ~/.gitconfig: gitconfig

@@ -10,7 +10,8 @@ DISABLE_AUTO_UPDATE="false"
 export UPDATE_ZSH_DAYS=7
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
-plugins=(git command-not-found common-aliases gradle )
+ZSH_COMPDUMP="$ZSH_CACHE_DIR"
+plugins=(git command-not-found common-aliases gradle zsh-autocomplete)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.powerlevel10k/powerlevel10k.zsh-theme
@@ -18,7 +19,6 @@ source $HOME/.powerlevel10k/powerlevel10k.zsh-theme
 zstyle ':autocomplete:*' min-input 1 
 zstyle ':autocomplete:tab:*' insert-unambiguous yes
 zstyle ':autocomplete:tab:*' widget-style menu-select
-source $HOME/.zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 export LANG=en_US.UTF-8
 export EDITOR='vim'
