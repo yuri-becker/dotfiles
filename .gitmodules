@@ -8,3 +8,6 @@
 [submodule "zsh-autocomplete"]
 	path = zsh-autocomplete
 	url = https://github.com/marlonrichert/zsh-autocomplete
+[submodule "gitkraken/themes"]
+	path = gitkraken/themes
+	url = git@github.com:davi19/Catppuccin-Gitkraken-Theme.git
