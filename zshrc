@@ -54,8 +54,10 @@ colormap() {
 
 
 # Load Angular CLI autocompletion.
-source <(ng completion script)
-export GPG_TTY=$(tty)
+if which ng >/dev/null 2>&1; then
+  source <(ng completion script)
+  export GPG_TTY=$(tty)
+fi
 
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
@@ -69,7 +71,9 @@ fpath=(~/.stripe $fpath)
 autoload -Uz compinit && compinit -i
 
 #fnm
-eval "$(fnm env --use-on-cd)"
+if which fnm >/dev/null 2>&1; then
+  eval "$(fnm env --use-on-cd)"
+fi
 
 # gitkraken-cli
 unalias gk
@@ -80,14 +84,18 @@ if [ -f $HOME/.zshrc.local ]; then
 fi
 
 # rbenv
-eval "$(rbenv init - zsh)"
+if which rbenv >/dev/null 2>&1; then
+  eval "$(rbenv init - zsh)"
+fi
 
 # vitasdk
 export VITASDK="$HOME/bin/vitasdk"
 export PATH="$VITASDK/bin:$PATH"
 
 # pyenv
-PATH=$(pyenv root)/shims:$PATH
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+if which pyenv >/dev/null 2>&1; then
+  PATH=$(pyenv root)/shims:$PATH
+  eval "$(pyenv init --path)"
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+fi
