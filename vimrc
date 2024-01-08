@@ -67,6 +67,16 @@ call plug#end()
 colorscheme PerfectDark
 
 nmap <Tab> <C-w>w
+" Move current line up with CMD+UP
+nnoremap <C-S-Up> :move-2<CR>==
+inoremap <C-S-Up> <Esc>:move-2<CR>==gi
+vnoremap <C-S-Up> :move'>+<CR>gv=gv
+
+" Move current line down with CMD+DOWN
+nnoremap <C-S-Down> :move+<CR>==
+inoremap <C-S-Down> <Esc>:move+<CR>==gi
+vnoremap <C-S-Down> :move'>-2<CR>gv=gv
+
 autocmd VimEnter * NERDTree | wincmd p
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 set gfn=MesloLGS-NF-Regular:h24
