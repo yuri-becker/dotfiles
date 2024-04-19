@@ -43,6 +43,7 @@
   ignore = update-index --assume-unchanged
   unignore = update-index --no-assume-unchanged
   ignored = !git ls-files -v | grep "^[[:lower:]]"
+  wip = !git commit -m "WIP" --no-verify && git push
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [interactive]
