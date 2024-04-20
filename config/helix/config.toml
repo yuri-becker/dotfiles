@@ -1,0 +1,9 @@
+theme = "catppuccin_mocha"
+
+[editor]
+rulers = [80]
+
+[editor.cursor-shape]
+normal = "underline"
+insert = "bar"
+select = "block"
