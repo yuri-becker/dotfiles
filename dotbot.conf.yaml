@@ -5,13 +5,36 @@
 - clean: ['~']
 - shell:
   - [git submodule update --init --recursive, Updating Submodules]
-  - [./install-zsh.sh, Checking for oh-my-zsh installation]
+  - [./scripts/install-zsh.sh, Checking for oh-my-zsh installation]
+- create:
+  - ~/.gitkraken/themes
 - link:
-    ~/.zshrc: zshrc
-    ~/.powerlevel10k: powerlevel10k
-    ~/.oh-my-zsh/custom/plugins/zsh-autocomplete: zsh-autocomplete
-    ~/.p10k.zsh: p10k.zsh
-    ~/.vimrc: vimrc
-    ~/.gitconfig: gitconfig
-    ~/.config/kitty: kitty
-    ~/.gitkraken/themes: gitkraken/themes
+    # Configs
+    ~/.gitconfig:
+      path: config/git/gitconfig
+      force: true
+    ~/.config/helix:
+      path: config/helix
+      force: true
+    ~/.config/kitty: 
+      path: config/kitty
+      force: true
+    ~/.p10k.zsh: 
+      path: config/shell/p10k.zsh
+      force: true
+    ~/.zshrc: 
+      path: config/shell/zshrc
+      force: true
+    ~/.vimrc: 
+      path: config/vim/vimrc
+      force: true
+    # Submodules
+    ~/.gitkraken/themes/catppuccin-mocha-theme.jsonc:
+      path: submodules/Catppuccin-Gitkraken-Theme/catppuccin-mocha-theme.jsonc
+      force: true
+    ~/.powerlevel10k: 
+      path: submodules/powerlevel10k
+      force: true
+    ~/.oh-my-zsh/custom/plugins/zsh-autocomplete:
+      path: submodules/zsh-autocomplete
+      force: true

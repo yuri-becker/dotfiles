@@ -1,13 +1,12 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
-	ignore = dirty
-[submodule "powerlevel10k"]
-	path = powerlevel10k
+[submodule "submodules/powerlevel10k"]
+	path = submodules/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k
-[submodule "zsh-autocomplete"]
-	path = zsh-autocomplete
+[submodule "submodules/zsh-autocomplete"]
+	path = submodules/zsh-autocomplete
 	url = https://github.com/marlonrichert/zsh-autocomplete
-[submodule "gitkraken/themes"]
-	path = gitkraken/themes
-	url = git@github.com:davi19/Catppuccin-Gitkraken-Theme.git
+[submodule "submodules/Catppuccin-Gitkraken-Theme"]
+	path = submodules/Catppuccin-Gitkraken-Theme
+	url = https://github.com/davi19/Catppuccin-Gitkraken-Theme.git
