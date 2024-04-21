@@ -30,7 +30,7 @@
       force: true
     # Submodules
     ~/.gitkraken/themes/catppuccin-mocha-theme.jsonc:
-      path: submodules/Catppuccin-Gitkraken-Theme/catppuccin-mocha-theme.jsonc
+      path: submodules/Catppuccin-Gitkraken-Theme/assets/catppuccin-mocha.jsonc
       force: true
     ~/.powerlevel10k: 
       path: submodules/powerlevel10k
