@@ -2,8 +2,13 @@ theme = "catppuccin_mocha"
 
 [editor]
 rulers = [80]
+line-number = "relative"
 
 [editor.cursor-shape]
 normal = "underline"
 insert = "bar"
 select = "block"
+
+[editor.indent-guides]
+render = true
+character = "▏"
