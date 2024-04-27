@@ -13,6 +13,9 @@
     ~/.gitconfig:
       path: config/git/gitconfig
       force: true
+    ~/.config/gitui:
+      path: config/gitui
+      force: true
     ~/.config/helix:
       path: config/helix
       force: true
@@ -29,6 +32,9 @@
       path: config/vim/vimrc
       force: true
     # Submodules
+    ~/.config/gitui/theme.ron:
+      path: submodules/catppuccin-gitui/theme/mocha.ron
+      force: true
     ~/.gitkraken/themes/catppuccin-mocha-theme.jsonc:
       path: submodules/Catppuccin-Gitkraken-Theme/assets/catppuccin-mocha.jsonc
       force: true

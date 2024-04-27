@@ -10,3 +10,6 @@
 [submodule "submodules/Catppuccin-Gitkraken-Theme"]
 	path = submodules/Catppuccin-Gitkraken-Theme
 	url = https://github.com/davi19/gitkraken.git
+[submodule "submodules/catppuccin-gitui"]
+	path = submodules/catppuccin-gitui
+	url = https://github.com/catppuccin/gitui.git
