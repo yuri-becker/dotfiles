@@ -43,6 +43,8 @@ alias mkcd='_(){ mkdir -p $1; cd $1; }; _'
 alias rimraf='rm -rf'
 alias ls='lsd'
 alias cat='bat --plain --pager never'
+alias wl='wishlist'
+alias gu='gitui'
 colormap() {
   for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
 }
