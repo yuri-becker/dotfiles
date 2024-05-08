@@ -5,13 +5,16 @@
 - clean: ['~']
 - shell:
   - [git submodule update --init --recursive, Updating Submodules]
-  - [./scripts/install-zsh.sh, Checking for oh-my-zsh installation]
+  - [fisher update, Install fish plugins]
 - create:
   - ~/.gitkraken/themes
 - link:
     # Configs
     ~/.gitconfig:
       path: config/git/gitconfig
+      force: true
+    ~/.config/fish:
+      path: config/fish
       force: true
     ~/.config/gitui:
       path: config/gitui
@@ -21,9 +24,6 @@
       force: true
     ~/.config/kitty: 
       path: config/kitty
-      force: true
-    ~/.p10k.zsh: 
-      path: config/shell/p10k.zsh
       force: true
     ~/.zshrc: 
       path: config/shell/zshrc
@@ -37,10 +37,4 @@
       force: true
     ~/.gitkraken/themes/catppuccin-mocha-theme.jsonc:
       path: submodules/Catppuccin-Gitkraken-Theme/assets/catppuccin-mocha.jsonc
-      force: true
-    ~/.powerlevel10k: 
-      path: submodules/powerlevel10k
-      force: true
-    ~/.oh-my-zsh/custom/plugins/zsh-autocomplete:
-      path: submodules/zsh-autocomplete
       force: true
