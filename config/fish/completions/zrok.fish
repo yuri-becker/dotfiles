@@ -1,0 +1,1 @@
+zrok completion fish | source
