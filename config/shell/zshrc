@@ -39,7 +39,8 @@ fi
 # move into fish
 local calledWithinFish=$(ps -p $$ -T -o "comm" | grep -q 'fish' &>/dev/null; echo $?)
 local hasNoExecutionString=$(test -z ${ZSH_EXECUTION_STRING}; echo $?)
-if [[ $calledWithinFish -ne 0 && $hasNoExecutionString && -o interactive ]]
+local isNotIntelliJ=$(test -z "$INTELLIJ_ENVIRONMENT_READER"; echo $?)
+if [[ $calledWithinFish -ne 0 && $hasNoExecutionString && $isNotIntelliJ && -o interactive ]]
 then
 	exec fish
 fi
