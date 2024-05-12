@@ -1,0 +1,6 @@
+hosts:
+  ".*":
+    +s: fish
+    +I:
+      - xxh-shell-fish
+      - xxh-plugin-fish-fisher

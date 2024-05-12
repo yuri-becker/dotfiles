@@ -25,11 +25,17 @@
     ~/.config/kitty: 
       path: config/kitty
       force: true
+    ~/.config/xxh:
+      path: config/xxh
+      force: true
     ~/.zshrc: 
       path: config/shell/zshrc
       force: true
     ~/.vimrc: 
       path: config/vim/vimrc
+      force: true
+    ~/.xxh/.xxh/config/xxh-plugin-fish-userconfig/fish:
+      path: config/xxh/xxh-plugin-fish-userconfig
       force: true
     # Submodules
     ~/.config/gitui/theme.ron:

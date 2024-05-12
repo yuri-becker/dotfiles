@@ -1,0 +1,1 @@
+/Users/yuri/.config/fish/conf.d/abbr.fish
