@@ -3,4 +3,4 @@ hosts:
     +s: fish
     +I:
       - xxh-shell-fish
-      - xxh-plugin-fish-fisher
+      - xxh-plugin-fish-userconfig
