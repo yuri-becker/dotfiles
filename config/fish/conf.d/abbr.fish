@@ -13,6 +13,7 @@ abbr -a --position command mv mv -i
 abbr -a --position command rm rm -i
 abbr -a --position command rimraf rm -rf
 abbr -a --position command t tail -f
+abbr -a --position command clippy cargo clippy --fix --allow-dirty --allow-staged
 if test $(uname) = Darwin
     abbr -a --position command bs brew search
     abbr -a --position command bl brew list
