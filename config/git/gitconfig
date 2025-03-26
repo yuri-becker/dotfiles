@@ -25,13 +25,15 @@
   flf = flow feature
   flfs = flow feature start
   flff = flow feature finish
-  fall = fetch --all
+  fall = fetch --all --prune
   g = grep
   j = jump
   l = list
   m = merge
   o = checkout
   p = pull
+  pu = push
+  pufl = push --force-with-lease
   s = status
   w = whatchanged
   graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all

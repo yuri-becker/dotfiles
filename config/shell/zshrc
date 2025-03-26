@@ -36,6 +36,11 @@ if which fnm >/dev/null 2>&1; then
   eval "$(fnm env --use-on-cd)"
 fi
 
+# import .zshrc.local
+if [ -f ~/.zshrc.local ]; then
+  source ~/.zshrc.local
+fi
+
 # move into fish
 local calledWithinFish=$(ps -p $$ -T -o "comm" | grep -q 'fish' &>/dev/null; echo $?)
 local hasNoExecutionString=$(test -z ${ZSH_EXECUTION_STRING}; echo $?)
