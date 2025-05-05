@@ -7,7 +7,6 @@
   - [git submodule update --init --recursive, Updating Submodules]
   - [fisher update, Install fish plugins]
 - create:
-  - ~/.gitkraken/themes
 - link:
     # Configs
     ~/.gitconfig:
@@ -37,10 +36,22 @@
     ~/.xxh/.xxh/config/xxh-plugin-fish-userconfig/fish:
       path: config/xxh/xxh-plugin-fish-userconfig
       force: true
+      
+    # solidus-specific Configs
+    ~/.config/pipewire:
+      path: config/pipewire
+      if: '[ $(hostname) = solidus ]'
+      force: true
+    ~/.config/hypr/config/user-config.conf:
+      path: config/hypr/user-config.conf
+      if: '[ $(hostname) = solidus ]'
+      force: true
+    ~/.config/waybar:
+      path: config/waybar
+      if: '[ $(hostname) = solidus ]'
+      force: true
+    
     # Submodules
     ~/.config/gitui/theme.ron:
       path: submodules/catppuccin-gitui/theme/mocha.ron
-      force: true
-    ~/.gitkraken/themes/catppuccin-mocha-theme.jsonc:
-      path: submodules/Catppuccin-Gitkraken-Theme/src/catppuccin-mocha.jsonc
       force: true

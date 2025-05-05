@@ -1,1 +1,3 @@
-rbenv init - fish | source
+if type -q rbenv
+    rbenv init - fish | source
+end
